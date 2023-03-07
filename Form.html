@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(109, 150, 228);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        form{
+            border: 1px solid black;
+            border-radius: 3%;
+            padding: 2%;
+            width: 30%;
+            box-shadow: 1px 2px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(2, 2, 2);
+        }
+        label,input,a,p{
+            padding: 1%;
+            margin: 2%;
+        }
+        input{
+            width: 90%;
+        }
+        #login{
+            width: 40%;
+            color: white;
+            background-color: black;
+            padding: 5%;
+            border: 1px solid black;
+            border-radius: 7%;
+            border-style: solid;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+    </style>
+    </head>
+<body>
+    <h1>Welcome User!!</h1>
+    <div >
+        <form action="  " method="POST">
+            <label for="username">Username/Email</label><br>
+            <input type="text/email" name="usename" id="usename"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="pwd" id="pwd"><br>
+            <p style="text-align: end;"><a href="#">Forgot Password?</a></p>
+            <p style="text-align: center;"><input type="submit" id="login" value="Login"></p>
+            <p style="text-align: center;">Don't have an account?<a href="#">create one</a></p>
+        </form>
+    </div>
+    </body>
+</html>
